@@ -1,0 +1,123 @@
+body{
+    
+    background: #efefef;
+    color: #777777;
+    font-family: sans-serif;
+    font-size:16px;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-weight: 300;
+    font-size: 28px;
+    margin:0px 0px 20px 0px;
+    
+
+}
+input[type="text"], input[type="password"]{
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid #aaa;
+    display: box;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    height: 32px;
+    margin-bottom: 20px;
+    outline: none;
+    padding: 4px;
+    /* transition: 0.2s ease; */
+    width: 220px;
+
+}
+input[type="submit"]{
+    background: #f44336;
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-weight: 500;
+    height: 32px;
+    margin-bottom: 28px;
+    /* text-transform: uppercase;
+    transition: 0.2s ease; */
+    width: 120px;    
+}
+input[type="submit"]:hover, input[type="submit"]:focus{
+    background: #ff5722;
+    transition: 0.2s ease;
+}
+.left{
+    position: absolute;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    padding: 40px;
+    width: 300px;
+    height:400px;
+}
+.or{
+    position: absolute;
+    top: 180px;
+    left: 280px;
+    width: 40px;
+    height: 40px;
+    background: #efefef;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgb(0,0,0.6);
+    line-height: 40px;
+    text-align: center;
+}
+.right{
+    position: absolute;
+    top: 0;
+    right: 0;
+    box-sizing: border-box;
+    padding: 40px;
+    width: 300px;
+    height:400px;
+    display: block;
+    margin-bottom: 40px;
+    font-size: 28px;
+    color: #fff;
+}
+ .social-signup{
+    display: block;
+    margin-bottom: 40px;
+    font-size: 28px;
+    color: #777777;
+    /* text-align: center;
+    text-shadow: 0 2px 4px rgb(0,0,0.6); */
+}
+#signupbox{
+    background: #fff;
+    box-shadow: 0px 2px 4px rgb(0, 0, 0.6);
+    height: 400px;
+    width: 600px;
+    margin: 5% auto;
+    position: relative;
+}
+.btn{
+    margin-bottom: 20px;
+    width:220px;
+    height: 36px;
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 500;
+    /* transition: 0.2s ease;
+    cursor: pointer; */
+}
+.google{
+    background: rgb(66, 133, 244);
+}
+.facebook{
+    background: #3b5988;
+    /* color:#32508e */
+}
+.linkedin{
+    background: #0e76a8;
+}
