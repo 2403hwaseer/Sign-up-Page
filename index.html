@@ -2,8 +2,10 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="google-signin-client_id" content="29713509378-5542gg6ht7r4srhsrarhee561vnj3enj.apps.googleusercontent.com">
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
         <title>SignUp Page</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
         <link href="style.css" rel="stylesheet">
 
     </head>
@@ -15,17 +17,27 @@
                <input type="text" name="email" placeholder="Email"  required/>
                <input type="password" name="passowrd" placeholder="Enter Your Password" required />
                <input type="password" name="passowrd2" placeholder="Re-enter Your Password" required/>
-               <input type="submit" name="signup" value="Sign-up" />
+               <input type="submit" name="signup" value="Signup" />
            </div>
            <div class="right">
-               <span class="social-signup">Sign-up with</span><br/>
-               <button class="btn google"><i class="fab fa-google"></i> Google</button><br/>
-               <button class="btn facebook">Facebook</button><br/>
-               <button class="btn linkedin">LinkedIn</button><br/>
-
+               <span class="social-signup">Signup using</span>
+               <!-- <button class="btn google"> <i class="fa fa fa-google" ></i>Google</button><br/>
+               <button class="btn facebook"><i class="fa fa fa-facebook"></i>Facebook</button><br/>
+               <button class="btn linkedin"><i class="fa fa fa-linkedin"></i>LinkedIn</button><br/>  -->
+               <div class="g-signin2" data-onsuccess="onSignUp"></div>
            </div>
            <div class="or">OR</div>
        </div> 
+       
 
     </body>
+    <script>
+        function onSignUp(googleUser){
+            var profile = googleUser.getBasicProfile();
+            console.log('Full Name: ' + profile.getName());
+            console.log('Given Name: ' + profile.getGivenName());
+            console.log('Family Name: ' + profile.getFamilyName());
+            console.log("Email: " + profile.getEmail());
+        }
+    </script>
 </html>
